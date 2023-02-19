@@ -15,13 +15,13 @@ describe("Login page test for TikChak", () => {
     );
   });
 
-  it("check if all the elements in the form are visible", () => {
+  it("Check if all the elements in the form are visible", () => {
     cy.get(".sc-1a1ajin-2 > .sc-eh1yog-0").type("ori.ngr@gmail.com");
     for (let i = 0; i < 8; i++) {
       i !== 3 && cy.get(".sc-1a1ajin-" + i).should("be.visible");
     }
   });
-  it("validate that i could send only valid email and password", () => {
+  it("Validate that i could send only valid email and password", () => {
     cy.get(".sc-1hhtwjc-0 > .sc-hBxehG").click();
     cy.get(".sc-eh1yog-2")
       .should("have.attr", "class")
@@ -39,7 +39,7 @@ describe("Login page test for TikChak", () => {
     );
   });
 
-  it("check if the password is hidden and can be revealed", () => {
+  it("Check if the password is hidden and can be revealed", () => {
     cy.get(".sc-1a1ajin-7 > .sc-eh1yog-0").click();
     cy.get(".sc-1a1ajin-3 > .sc-eh1yog-0 > input").type("123456789");
     cy.get(".sc-1a1ajin-3 > .sc-eh1yog-0 > input").should(
@@ -48,7 +48,7 @@ describe("Login page test for TikChak", () => {
     );
   });
 
-  it('check the "Send me SMS" feature', () => {
+  it('Check the "Send me SMS" feature', () => {
     cy.get(".sc-1a1ajin-2 > .sc-eh1yog-0").type("ori.ngr@gmail.com");
     cy.get(".sc-1hhtwjc-0 > .sc-hBxehG").click();
     cy.get('[type="number"]').each(($el, index, $list) => {
@@ -60,7 +60,7 @@ describe("Login page test for TikChak", () => {
     cy.get(".sc-1edk3uj-1").should("contain", "XXX-XXX3322");
     cy.get(".sc-10m6w8o-3 > .sc-hBxehG").click();
   });
-  it('check the "יש לי סיסמא" feature', () => {
+  it('Check the "I have a password" feature', () => {
     cy.get(".sc-1a1ajin-2 > .sc-eh1yog-0").type("ori.ngr@gmail.com");
     cy.get(".sc-1a1ajin-7 > .sc-eh1yog-0").click();
     cy.get(".sc-1a1ajin-3 > .sc-eh1yog-0 > input").type("Aa12345678");
