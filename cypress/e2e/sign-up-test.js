@@ -10,7 +10,7 @@ describe("Login page test for TikChak", () => {
       },
 
       {
-        fixture: "../fixtures/example.json",
+        fixture: "../fixtures/mocking-sms.json",
       }
     );
   });
