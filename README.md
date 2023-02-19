@@ -12,6 +12,7 @@ git clone https://github.com/orinag/Tickchak-Login-Test.git
 
 Once you have cloned the repository, you can install the required dependencies by running:
 
+bash
 npm install
 
 ## Running Tests with npx
