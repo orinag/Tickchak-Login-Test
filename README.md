@@ -35,6 +35,10 @@ This will run all of the tests in the suite in headless mode.
 
 To run the tests with Docker, you will need to have Docker installed on your machine. Once you have Docker installed, you can use the following command to run the tests in a Docker container:
 
+for linux:
+docker run -it -v $PWD:/e2e -w /e2e cypress/included:12.6.0 npm run cypress:runDefault
+
+for windows:
 docker run -it -v %cd%:/e2e -w /e2e cypress/included:12.6.0 npm run cypress:runDefault
 
 
