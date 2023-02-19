@@ -2,7 +2,7 @@
 
 
 
-This is a test suite for the [Your App Name] web application. It includes end-to-end tests written with Cypress.
+This is a test suite for Tikchak Login page. It includes end-to-end tests written with Cypress.
 
 ## Getting Started
 
