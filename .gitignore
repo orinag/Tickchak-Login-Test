@@ -1,20 +1,7 @@
-# Cypress files
-/cypress/videos
-/cypress/screenshots
-
-
-# Node.js files
-/node_modules
-/npm-debug.log
-/yarn-debug.log
-/yarn-error.log
-
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Environment files
-.env*
-.env.local*
+.DS_Store
+.vscode
+test/src/.Trash-0/
+**/cypress/videos
+**/cypress/screenshots
+**/cypress/logs
+node_modules/

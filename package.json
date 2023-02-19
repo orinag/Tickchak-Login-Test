@@ -1,0 +1,27 @@
+{
+  "name": "tikchak-login-page-test",
+  "version": "1.0.0",
+  "description": "E2E test for Tikchak Login page",
+
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open --browser chrome --e2e",
+    "cypress:runDefault": "cypress run cypress/e2e/*.js",
+    "cypress:chrome": "cypress run --browser chrome cypress/e2e/*.js",
+    "cypress:edge": "cypress run --browser edge cypress/e2e/*.js",
+    "cypress:runChromeHeadless": "cypress run --headless --browser chrome cypress/e2e/*.js --key 4bc50df7-5eee-4147-8eb3-ccea611c8d4b"
+  },
+  "keywords": [
+    "e2e",
+    "automation",
+    "framework",
+    "cypress"
+  ],
+  "author": "OriNagar",
+  "license": "ISC",
+  "devDependencies": {
+
+    "cypress": "^12.6.0"
+
+  }
+}
