@@ -10,7 +10,7 @@
     "cypress:chrome": "cypress run --browser chrome cypress/e2e/*.js",
     "cypress:edge": "cypress run --browser edge cypress/e2e/*.js",
     "cypress:runChromeHeadless": "cypress run --headless --browser chrome cypress/e2e/*.js --key 4bc50df7-5eee-4147-8eb3-ccea611c8d4b",
-    "cy:docker": "docker run -it -v %cd%:/e2e -w /e2e cypress/included:12.6.0"
+    
 
   },
   "keywords": [
