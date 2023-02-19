@@ -50,6 +50,7 @@ Note that if your tests require a specific environment or configuration, you can
 
 `docker run -it -v %cd%:/e2e -w /e2e -e MY_ENV_VAR=value cypress/included:12.6.0 npm run cypress:runDefault`
 
+You can read more about running cypress with a single docker command here : https://www.cypress.io/blog/2019/05/02/run-cypress-with-a-single-docker-command/
 
 ## Configuration
 
