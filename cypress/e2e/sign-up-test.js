@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe("template spec", () => {
+describe("Login page test for TikChak", () => {
   beforeEach(() => {
     cy.visit("https://app.tickchak.co.il/");
     cy.intercept(
@@ -15,16 +15,11 @@ describe("template spec", () => {
     );
   });
 
-  it("check if all the elements in the form is visible", () => {
+  it("check if all the elements in the form are visible", () => {
     cy.get(".sc-1a1ajin-2 > .sc-eh1yog-0").type("ori.ngr@gmail.com");
     for (let i = 0; i < 8; i++) {
       i !== 3 && cy.get(".sc-1a1ajin-" + i).should("be.visible");
     }
-    /* cy.get(".sc-1a1ajin-6 > :nth-child(2)")
-      .invoke("attr", "target", "_self")
-      .click();
-    cy.url().should("include", "https://accounts.google.com");
-*/
   });
   it("validate that i could send only valid email and password", () => {
     cy.get(".sc-1hhtwjc-0 > .sc-hBxehG").click();
@@ -47,7 +42,6 @@ describe("template spec", () => {
   it("check if the password is hidden and can be revealed", () => {
     cy.get(".sc-1a1ajin-7 > .sc-eh1yog-0").click();
     cy.get(".sc-1a1ajin-3 > .sc-eh1yog-0 > input").type("123456789");
-    //cy.get('input[type="password"]').should("have.attr", "type", "password");
     cy.get(".sc-1a1ajin-3 > .sc-eh1yog-0 > input").should(
       "not.contain",
       123456789
